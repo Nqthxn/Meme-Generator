@@ -22,15 +22,21 @@
     padding-bottom: 15px;
 }
 .form{
-    display:grid;
-    grid-template: 60px 60px / 1fr 1fr;
-    gap:17px;
-    width:900px;
-    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    width:800px;
+
+}
+.input-container{
+    display:flex;
+    justify-content: space-around;
+
 }
 main{
     display:flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .form-button{ 
     grid-column:  1 / -1;
@@ -42,10 +48,24 @@ main{
     font-weight:bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor:pointer;
+    padding-top:18px;
+    padding-bottom: 18px;
 }
 .form-input{
     padding-left: 17px;
+    padding-top:18px;
+    padding-bottom: 18px;
     border:none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    width:390px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.first-input{
+    margin-right: 20px;
+}
+.meme-image{
+    width:300px;
+    height:300px;
 }
